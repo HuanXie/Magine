@@ -1,4 +1,4 @@
-package com.example.basemvvm.data
+package com.example.basemvvm.data.network
 
 import java.lang.Exception
 

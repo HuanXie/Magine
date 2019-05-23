@@ -1,6 +1,6 @@
 package com.example.basemvvm.ui
 
-import com.example.basemvvm.data.BaseRepository
+import com.example.basemvvm.data.network.BaseRepository
 import com.example.basemvvm.data.SEARCH_SHOWS
 import okhttp3.Callback
 import okhttp3.OkHttpClient

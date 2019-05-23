@@ -1,4 +1,4 @@
-package com.example.basemvvm.data
+package com.example.basemvvm.data.network
 
 import android.content.Context
 import android.net.ConnectivityManager

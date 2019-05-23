@@ -3,7 +3,6 @@ package com.example.basemvvm.di
 import android.content.Context
 import android.util.Log
 import com.example.basemvvm.BuildConfig
-import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import okhttp3.Cache
@@ -12,10 +11,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
-import com.example.basemvvm.data.AppApi
+import com.example.basemvvm.data.network.AppApi
 import com.example.basemvvm.data.network.HeaderInterceptor
 import java.io.File
-import java.util.concurrent.ExecutorService
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 

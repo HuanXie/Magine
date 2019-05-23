@@ -1,7 +1,5 @@
 package com.example.basemvvm.di.activity
 
-import android.content.Context
-import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -9,7 +7,6 @@ import com.example.basemvvm.ui.MainActivity
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.IntoMap
-import com.example.basemvvm.data.AppApi
 import com.example.basemvvm.di.viewmodel.ViewModelKey
 import com.example.basemvvm.ui.MainRepository
 import com.example.basemvvm.ui.MainViewModel
