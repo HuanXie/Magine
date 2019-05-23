@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_vertical_margin">16dp</dimen>
+    <dimen name="title_l">20sp</dimen>
+    <dimen name="show_image_size">100dp</dimen>
+    <dimen name="ignore_due_to_constraints">0dp</dimen>
+</resources>

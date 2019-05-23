@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaseMvvm</string>
+    <string name="content_description_image_show">content_description_image_show</string>
+    <string name="retry">retry</string>
+    <string name="dismiss">dismiss</string>
+    <string name="retry_title">Oops, we couldn\'t get shows, please try again</string>
+</resources>
