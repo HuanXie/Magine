@@ -11,8 +11,10 @@ import com.example.basemvvm.extensions.inflate
 import kotlinx.android.synthetic.main.show_list_item.view.showImage
 import kotlinx.android.synthetic.main.show_list_item.view.showTitle
 
-class ShowInfoListAdapter(private val showInfoList: List<ShowInfo>,
-                          val clickListener: (Int) -> Unit) : RecyclerView.Adapter<ShowInfoListAdapter.ViewHolder>() {
+class ShowInfoListAdapter(
+    private val showInfoList: List<ShowInfo>,
+    val clickListener: (Int) -> Unit) : RecyclerView.Adapter<ShowInfoListAdapter.ViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = parent.inflate(R.layout.show_list_item)
         return ViewHolder(view)
@@ -44,6 +46,5 @@ class ShowInfoListAdapter(private val showInfoList: List<ShowInfo>,
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
 
 }

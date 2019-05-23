@@ -1,5 +1,10 @@
 package com.example.basemvvm.data.datamodels
 
+
+/**
+ * These data classes may need to put into different class file,
+ * since it is a demo project, and the developer is TOO lazy, please don't care about that.
+ */
 data class ShowInfo(
     val score: Double? = null,
     val show: Show? = null

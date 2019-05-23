@@ -19,6 +19,13 @@ import javax.inject.Inject
 import androidx.appcompat.app.AlertDialog
 
 
+/**
+ * Main Activity will show the list of shows.
+ *
+ * NOTICE: these files in network folder and the NetworkModule are useless
+ * due to the retrofit can't handle the http connection to api.tvmaze.com
+ * But the developer still leave them there to save as an example.
+ */
 class MainActivity : DaggerAppCompatActivity() {
 
     @Inject
@@ -27,7 +34,7 @@ class MainActivity : DaggerAppCompatActivity() {
     private val showInfoList = mutableListOf<ShowInfo>()
     private val showInfoListAdapter = ShowInfoListAdapter(showInfoList) { position ->
         mainViewModel.selectPosition = position
-        ShowDetailFragment().show(supportFragmentManager, "detail_fragment")
+        ShowDetailFragment().show(supportFragmentManager, DETAIL_FRAGMENT_TAG)
     }
     private var queryString = ""
 
@@ -55,6 +62,7 @@ class MainActivity : DaggerAppCompatActivity() {
             loadingProgressBar.setVisibleOrGone(it)
         })
 
+        // To Test the error dialog, you can turn off the wifi and mobile data to try.
         mainViewModel.showError.observe(this, Observer { show ->
             if (show) {
                 val alertDialogBuilder = AlertDialog.Builder(this)
@@ -92,6 +100,10 @@ class MainActivity : DaggerAppCompatActivity() {
     private fun getShows(query: String) {
         mainViewModel.getShowList(query)
         mainViewModel.adjustLoadingIcon(true)
+    }
+
+    companion object {
+        private const val DETAIL_FRAGMENT_TAG = "detail_fragment"
     }
 
 }
